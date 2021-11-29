@@ -14,10 +14,9 @@ jobs:
         steps:
             - uses: appleboy/ssh-action@master
             - name: test script 2
-              run: |
-                  whoami
               with:
                   host: ${{ secrets.HOST }}
                   username: ${{ secrets.USERNAME }}
                   key: ${{ secrets.SSH_KEY }}
                   port: ${{ secrets.PORT }}
+                  
