@@ -13,7 +13,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: appleboy/ssh-action@master
-            - name: test script
+            - name: test script 2
               with:
                   host: ${{ secrets.HOST }}
                   username: ${{ secrets.USERNAME }}
