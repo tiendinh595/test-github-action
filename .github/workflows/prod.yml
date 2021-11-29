@@ -19,8 +19,4 @@ jobs:
                   username: ${{ secrets.USERNAME }}
                   key: ${{ secrets.SSH_KEY }}
                   port: ${{ secrets.PORT }}
-                  script: |
-                      # cd ${{ secrets.TARGET }}
-                      echo ${{ secrets.HOST }}
-                      pwd
-                      ls -la
+                  script: whoami
